@@ -1,9 +1,8 @@
 import Decorator from './Decorator'
 
-export default class SorveteDiet extends Decorator {
-  protected tipo: null
-  public getPreco(): number {
-    return 200 + super.getPreco()
+export default class SorveteComum extends Decorator {
+  public getPreco() {
+    return 150 + super.getPreco()
   }
 
   public getSabores() {

@@ -9,50 +9,57 @@
       <h1>
         Atividade avaliativa 2 - Questão 1
       </h1>
-      <div id="inputs-servido">
+      <div class="container">
         <div>
-          <p>Onde será servido?</p>
-          <div id="servido">
-            <input type="radio" checked id="copo" name="servido" value="copo">
-            <label for="copo">Copo (R$0,20)</label><br>
-            <input type="radio" id="taca" name="servido" value="taca">
-            <label for="taca">Taça (gratuito)</label><br>
-            <input type="radio" id="casquinha" name="servido" value="casq">
-            <label for="casquinha">Casquinha (R$1,50)</label>
+          <div>
+            <p>Onde será servido?</p>
+            <div id="servido">
+              <input type="radio" checked id="copo" name="servido" value="copo">
+              <label for="copo">Copo (R$0,20)</label><br>
+              <input type="radio" id="taca" name="servido" value="taca">
+              <label for="taca">Taça (gratuito)</label><br>
+              <input type="radio" id="casquinha" name="servido" value="casq">
+              <label for="casquinha">Casquinha (R$1,50)</label>
+            </div>
           </div>
+  
+          <div>
+            <p>Sabor do sorvete</p>
+            <div id="sabores">
+              <input class="saborInput" type="number" min="0" name="chocolate" value="0">
+              <label>Chocolate (R$1,50)</label><br>
+              <input class="saborInput" type="number" min="0" name="morango" value="0">
+              <label>Morango (R$1,50)</label></label><br>
+              <input class="saborInput" type="number" min="0" name="flocos" value="0">
+              <label>Flocos (R$1,50)</label></label><br>
+              <input class="saborInput" type="number" min="0" name="pave" value="0">
+              <label>Pave (R$1,50)</label></label><br>
+              <input class="saborInput" type="number" min="0" name="napolitano" value="0">
+              <label>Napolitano (R$1,50)</label></label><br>
+              <input class="saborInput" type="number" min="0" name="chocolateDiet" value="0">
+              <label>Chocolate Diet (R$2,00)</label></label><br>
+            </div>
+          </div>
+  
+          <div>
+            <p>Sabor da calda (R$0,50 cada)</p>
+            <div id="calda">
+              <input class="caldaInput" type="number" min="0" name="chocolate" value="0">
+              <label>Chocolate</label><br>
+              <input class="caldaInput" type="number" min="0" name="morango" value="0">
+              <label>Morango</label></label><br>
+              <input class="caldaInput" type="number" min="0" name="caramelo" value="0">
+              <label>Caramelo</label></label><br>
+            </div>
+          </div>
+          <input type="button" value="Prosseguir" id="submit">
         </div>
-
+        
         <div>
-          <p>Sabor do sorvete</p>
-          <div id="sabores">
-            <input class="saborInput" type="number" min="0" name="chocolate" value="0">
-            <label>Chocolate (R$1,50)</label><br>
-            <input class="saborInput" type="number" min="0" name="morango" value="0">
-            <label>Morango (R$1,50)</label></label><br>
-            <input class="saborInput" type="number" min="0" name="flocos" value="0">
-            <label>Flocos (R$1,50)</label></label><br>
-            <input class="saborInput" type="number" min="0" name="pave" value="0">
-            <label>Pave (R$1,50)</label></label><br>
-            <input class="saborInput" type="number" min="0" name="napolitano" value="0">
-            <label>Napolitano (R$1,50)</label></label><br>
-            <input class="saborInput" type="number" min="0" name="chocoloateDiet" value="0">
-            <label>Chocolate Diet (R$2,00)</label></label><br>
-          </div>
-        </div>
-
-        <div>
-          <p>Sabor da calda (R$0,50 cada)</p>
-          <div id="calda">
-            <input class="caldaInput" type="number" min="0" name="chocolate" value="0">
-            <label>Chocolate</label><br>
-            <input class="caldaInput" type="number" min="0" name="morango" value="0">
-            <label>Morango</label></label><br>
-            <input class="caldaInput" type="number" min="0" name="caramelo" value="0">
-            <label>Caramelo</label></label><br>
-          </div>
+          <h4>Histórico de pedidos</h4>
+          <ul id="historico"></ul>
         </div>
       </div>
-      <input type="button" value="Prosseguir" id="submit">
     </div>
   </body>
 </html>
