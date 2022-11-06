@@ -65,3 +65,39 @@ document.querySelector('#submit').addEventListener('click', () => {
 
   addHistorico(pedido) // adiciona o tipo do sorvete à pilha
 })
+
+document.querySelector('#exemplo').addEventListener('click', () => { // cria sorvetes de exemplo
+  let svt1 = new sorvete.Sorvete()
+  svt1 = new sorvete.SorveteComCalda(svt1)
+  svt1.setCalda(sorvete.Caldas.chocolate)
+  svt1 = new sorvete.SorveteDiet(svt1)
+  svt1.setSabor(sorvete.Sabores.chocolateDiet)
+  svt1 = new sorvete.SorveteNoCopo(svt1)
+  svt1.setTipo(sorvete.Tipos.copo)
+
+  addHistorico(svt1)
+
+  let svt2 = new sorvete.Sorvete()
+  svt2 = new sorvete.SorveteComCalda(svt2)
+  svt2.setCalda(sorvete.Caldas.caramelo)
+  svt2 = new sorvete.SorveteComum(svt2)
+  svt2.setSabor(sorvete.Sabores.pave)
+  svt2 = new sorvete.SorveteComum(svt2)
+  svt2.setSabor(sorvete.Sabores.flocos)
+  svt2 = new sorvete.SorveteNaTaca(svt2)
+  svt2.setTipo(sorvete.Tipos.taca)
+
+  addHistorico(svt2)
+
+  let svt3 = new sorvete.Sorvete()
+  svt3 = new sorvete.SorveteComCalda(svt3)
+  svt3.setCalda(sorvete.Caldas.caramelo)
+  svt3 = new sorvete.SorveteComCalda(svt3)
+  svt3.setCalda(sorvete.Caldas.chocolate)
+  svt3 = new sorvete.SorveteDiet(svt3)
+  svt3.setSabor(sorvete.Sabores.napolitano)
+  svt3 = new sorvete.SorveteNaCasq(svt3)
+  svt3.setTipo(sorvete.Tipos.casquinha)
+
+  addHistorico(svt3)
+})
