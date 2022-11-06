@@ -10,7 +10,40 @@
         Atividade avaliativa 2 - Questão 2
       </h1>
       <div class="container">
-        
+        <h2>Conta bancária</h2>
+
+        <p>
+          Estado: <span id="estado"></span>
+        </p>
+        <p>
+          Saldo: R$<span id="saldo"></span>
+        </p>
+        <p> 
+          Limite: R$<span id="limite"></span>
+        </p>
+
+        <p> 
+          Dias até juros: <span id="dias">Não está em debito</span>
+        </p>
+
+        <p> 
+          Data de abertura: <span id="data-aber"></span>
+        </p>
+
+        <p> 
+          Data de encerramento <span id="data-enc">Não foi encerrada</span>
+        </p>
+
+        <div id="textfield">
+          <label for="valor">Valor:</label>
+          <input type="number" id="valor" min="0" step="0.01" value="0">
+        </div>
+
+        <div id="buttons">
+          <input type="button" id="deposito" value="Depositar">
+          <input type="button" id="saque" value="Sacar">
+          <input type="button" id="fechar" value="Fechar Conta">
+        </div>
       </div>
     </div>
   </body>
