@@ -8,7 +8,7 @@ export default class StateDevedora extends State {
     super()
     this.nomeState = 'Devedora'
 
-    this.interval = setInterval(() => {
+    this.interval = setInterval(() => { // intervalo de juros
       this.days++
       if (this.days === 30) {
         this.aplicarJuros()
@@ -20,7 +20,7 @@ export default class StateDevedora extends State {
   }
 
   private aplicarJuros(): void {
-    this.conta.setSaldo(this.conta.getSaldo() * 1.1)
+    this.conta.setSaldo(parseFloat((this.conta.getSaldo() * 1.1).toFixed(2))) // necessário castar para string com dois pontos fixos depois para float para evitar erros de ponto flutuante
     document.querySelector('#saldo').innerHTML = (this.conta.getSaldo()/100).toFixed(2).toString()
   }
 
